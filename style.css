@@ -1,0 +1,156 @@
+
+/* Global View aka Desktop View */
+
+body {
+    background-color: #EBEBEB;
+    font-family: 'Asap', sans-serif;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+   
+}
+
+.header-container {
+    background-color: rgb(61, 61, 61);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+   
+}
+
+header {
+    align-items: center;
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+span {
+    font-weight: 700;
+   
+}
+
+.navbutton {
+    border: 1px solid #EBEBEB;
+    padding: 11px 25px;
+    margin: 0 0 0 20px;
+}
+
+
+.col {
+    background-color: blueviolet;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col p {
+
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+
+.hide-desktop-only {
+    display: none;
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+/* Tablet View */
+
+@media (max-width: 768px) {
+    .col {
+        width: 47%;
+    }
+
+    .hide-desktop-only {
+        display: block;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .navbutton {
+        margin-left: 0;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .mybutton {
+        display: block;
+        background-color: darkgoldenrod;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+}
+
+/* Mobile View */
+
+@media (max-width: 400px) {
+    .col {
+        width: 100%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+  
+}
+
